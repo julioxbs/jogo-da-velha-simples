@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Potta One', cursive;
+    background: rgb(124, 123, 123);
+
+    text-align: center;
+}
+
+h1 {
+    margin: 2rem 0;
+    color: #fff;
+    text-decoration: underline;
+}
+
+// GAME
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: beige;
+    border: 3px solid #000;
+    display: inline-block;
+
+    .o {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "\2B55";
+            font-size: 40px;
+            line-height: 100px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .x {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "\274C";
+            font-size: 40px;
+            line-height: 100px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
